@@ -1,5 +1,3 @@
-chineseaqi
-======
 
 中国70多个城市的aqi数据。数据来自[http://pm25.in]
 

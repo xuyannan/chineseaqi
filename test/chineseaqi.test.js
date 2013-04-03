@@ -1,0 +1,22 @@
+require('should')
+var AqiApi = require('../');
+var api = new AqiApi('QfEJyi3oWKSBCnKrqp1v');
+
+describe("getSupportCities:", function() {
+    it('The cities should be an Array', function(done) {
+      api.getSupportCities(function(data) {
+        var cities = data.cities;
+        //cities.should.be.an.instanceOf(Array);
+        done();
+      });
+    });
+});
+
+describe('getAvgPm25ForCity:', function() {
+  it('The pm2.5 data should be an object', function(done){
+    api.getAvgPm25ForCity('beijing', function(data) {
+      //data.should.be.a('object');
+      done(); 
+    });
+  });
+});
