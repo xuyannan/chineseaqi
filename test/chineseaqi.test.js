@@ -1,7 +1,6 @@
 require('should')
 var AqiApi = require('../');
 var api = new AqiApi('QfEJyi3oWKSBCnKrqp1v');
-/*
 describe("getSupportCities:", function() {
     it('The cities should be an Array', function(done) {
       api.getSupportCities(function(data) {
@@ -13,18 +12,37 @@ describe("getSupportCities:", function() {
 });
 
 describe('getAvgPm25ForCity:', function() {
-  it('The pm2.5 data should be an object', function(done){
-    api.getAvgPm25ForCity('beijing', function(data) {
+  it('The average pm2.5 data should be an object', function(done){
+    api.getAvgPm25ForCity({
+      city: 'beijing',
+      callback: function(data) {
       //data.should.be.a('object');
-      done(); 
+        done(); 
+      },
+      errorCallback: function() {}
     });
   });
 });
-*/
+
 describe('getUsemPm25ForCity:', function() {
-  it('The pm2.5 data should be an object', function(done){
+  it('The pm2.5 data of U.S Embassy should be an Array', function(done){
     api.getUsemPm25ForCity({
-      city: 'beijing'
+      city: 'beijing',
+      callback: function(data) {
+        done();
+      }
+    });
+    done();
+  });
+});
+
+describe('getLatestUsemPm25ForCity:', function() {
+  it('The pm2.5 data U.S. Embassy should be an object', function(done){
+    api.getLatestUsemPm25ForCity({
+      city: 'beijing',
+      callback: function(data) {
+        done();
+      }
     });
     done();
   });
