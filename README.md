@@ -1,9 +1,8 @@
-
-中国70多个城市的aqi(空气污染指数)数据。国内监测站数据来自[http://pm25.in]，美国使领馆数据来自[http://www.beijingaqifeed.com/]。
+中国70多个城市的aqi(空气污染指数)数据。国内监测站数据来自[pm25.in](http://pm25.in)，美国使领馆数据来自[beijingaqifeed](http://www.beijingaqifeed.com/)。
 
 目前只有北京，广州，上海，成都有美国使领馆数据。
 
-返回的数据中，各字段含义参考：[http://pm25.in/api_doc]。
+返回的数据中，各字段含义参考[API文档](http://pm25.in/api_doc)。
 
 ## Installation
 
