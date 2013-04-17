@@ -47,3 +47,15 @@ describe('getLatestUsemPm25ForCity:', function() {
     done();
   });
 });
+
+describe('getWeatherForCity:', function() {
+  it('The weather data should be an object', function(done){
+    api.getWeatherForCity({
+      city: 'beijing',
+      callback: function(data) {
+        done();
+      }
+    });
+    done();
+  });
+});

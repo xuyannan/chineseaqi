@@ -1,11 +1,12 @@
 {
   "name": "chineseaqi",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.js",
   "dependencies": {
     "jquery": ">= 1.8.3",
     "libxmljs": ">= 0.7.1",
-    "request": ">= 2.16.6"
+    "request": ">= 2.16.6",
+    "chinesecities": ">= 0.0.2"
   },
   "repository": {
     "type": "git",
