@@ -6,7 +6,8 @@
     "jquery": ">= 1.8.3",
     "libxmljs": ">= 0.7.1",
     "request": ">= 2.16.6",
-    "chinesecities": ">= 0.0.2"
+    "chinesecities": ">= 0.0.2",
+    "twitter": ">= 0.1.18"
   },
   "repository": {
     "type": "git",
