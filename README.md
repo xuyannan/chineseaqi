@@ -29,7 +29,7 @@ npm install chineseaqi
 如果使用twitter作为美使领馆数据的数据源，需要在config.js文件中指定twitter app的相关信息：
 
 ```
-cp config.sample.js
+cp config.sample.js config.js
 ```
 
 示例代码：
